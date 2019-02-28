@@ -1,5 +1,5 @@
 {
-  "name": "@sandstorm/react-redux-utils",
+  "name": "@sandstormmedia/react-redux-ts-utils",
   "version": "1.0.0",
   "license": "MIT",
   "description": "This package provides utility and typings for our React, Redux and TypeScript projects.",
@@ -10,7 +10,7 @@
     "utility"
   ],
   "author": {
-    "name": "sandstorm",
+    "name": "Sandstorm",
     "email": "kontakt@sandstorm.de",
     "url": "https://sandstorm.de"
   },
@@ -23,13 +23,20 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sandstorm/react-redux-utils.git"
+    "url": "git+https://github.com/sandstorm/react-redux-ts-utils.git"
   },
-  "main": "./dist/index.ts",
-  "typings": "./dist/index.d.ts",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "module": "es/index.js",
   "scripts": {
     "build": "tsc"
   },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
   "devDependencies": {
     "typescript": "^3.3.3333"
   }

@@ -1,4 +1,4 @@
-import {StringMap, AnyFunction} from './utils';
+import {StringMap, AnyFunction} from '../utils';
 
 /**
  * Action can exists only in 2 shapes. type only or type with payload
@@ -59,9 +59,3 @@ export type ActionsOfType<
   ActionUnion,
   ActionType extends string
 > = ActionUnion extends Action<ActionType> ? ActionUnion : never;
-
-export function createAction<T extends string>(type: T): Action<T>;
-export function createAction<T extends string, P>(type: T, payload: P): Action<T, P>;
-export function createAction<T extends string, P>(type: T, payload?: P) {
-  return payload === undefined ? { type } : { type, payload };
-};
