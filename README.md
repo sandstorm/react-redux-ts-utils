@@ -1,3 +1,5 @@
+> DEPRECATED! TypeScript matured well and made most of those utilities obsolete.
+
 # React and Redux utilities
 
 This package provides utility and typings for our React, Redux and TypeScript projects.
